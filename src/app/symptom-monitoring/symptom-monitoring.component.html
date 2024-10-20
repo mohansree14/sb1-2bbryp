@@ -1,0 +1,31 @@
+<ActionBar title="Symptom Monitoring"></ActionBar>
+
+<ScrollView>
+  <StackLayout class="p-4">
+    <Label text="Track Your Symptoms" class="text-xl font-bold mb-4"></Label>
+    
+    <GridLayout rows="auto, auto, auto" columns="*, *" class="symptom-grid">
+      <Label text="Symptom" row="0" col="0" class="font-bold"></Label>
+      <Label text="Severity" row="0" col="1" class="font-bold"></Label>
+      
+      <Label text="Fatigue" row="1" col="0"></Label>
+      <Slider row="1" col="1" minValue="0" maxValue="10" value="5"></Slider>
+      
+      <Label text="Thirst" row="2" col="0"></Label>
+      <Slider row="2" col="1" minValue="0" maxValue="10" value="3"></Slider>
+    </GridLayout>
+    
+    <Label text="Blood Glucose Readings" class="text-lg font-bold mt-4"></Label>
+    <GridLayout rows="auto, auto" columns="*, *, *" class="glucose-grid">
+      <Label text="Date" row="0" col="0" class="font-bold"></Label>
+      <Label text="Time" row="0" col="1" class="font-bold"></Label>
+      <Label text="Level" row="0" col="2" class="font-bold"></Label>
+      
+      <Label text="Today" row="1" col="0"></Label>
+      <Label text="8:00 AM" row="1" col="1"></Label>
+      <Label text="120 mg/dL" row="1" col="2"></Label>
+    </GridLayout>
+    
+    <Button text="Add New Reading" class="btn btn-primary mt-4"></Button>
+  </StackLayout>
+</ScrollView>

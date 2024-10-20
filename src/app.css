@@ -1,0 +1,21 @@
+@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+.btn-primary {
+  background-color: #007aff;
+  color: white;
+}
+
+.btn-outline {
+  border-color: #007aff;
+  color: #007aff;
+}
+
+.medicine-grid, .symptom-grid, .glucose-grid {
+  border-width: 1;
+  border-color: #e0e0e0;
+}
+
+.medicine-grid Label, .symptom-grid Label, .glucose-grid Label {
+  padding: 10;
+}

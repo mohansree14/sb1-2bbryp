@@ -1,0 +1,25 @@
+<ActionBar title="Diabetes Management"></ActionBar>
+
+<GridLayout rows="auto, *, auto" class="p-4">
+  <StackLayout row="0" class="mb-4">
+    <Label text="Welcome, John" class="text-2xl font-bold"></Label>
+    <Label text="Your health is our priority" class="text-lg text-gray-500"></Label>
+  </StackLayout>
+
+  <GridLayout row="1" columns="*, *" rows="*, *" class="m-4">
+    <StackLayout col="0" row="0" class="feature-card" (tap)="navigateTo('/diet-plan')">
+      <Label text="Diet Plan" class="feature-title"></Label>
+    </StackLayout>
+    <StackLayout col="1" row="0" class="feature-card" (tap)="navigateTo('/medicine-analysis')">
+      <Label text="Medicine Analysis" class="feature-title"></Label>
+    </StackLayout>
+    <StackLayout col="0" row="1" class="feature-card" (tap)="navigateTo('/symptom-monitoring')">
+      <Label text="Symptom Monitoring" class="feature-title"></Label>
+    </StackLayout>
+    <StackLayout col="1" row="1" class="feature-card" (tap)="navigateTo('/doctor-interaction')">
+      <Label text="Doctor Interaction" class="feature-title"></Label>
+    </StackLayout>
+  </GridLayout>
+
+  <Button row="2" text="Emergency Contact" class="btn btn-danger"></Button>
+</GridLayout>

@@ -1,0 +1,26 @@
+<ActionBar title="Medicine Analysis"></ActionBar>
+
+<ScrollView>
+  <StackLayout class="p-4">
+    <Label text="Your Medication Schedule" class="text-xl font-bold mb-4"></Label>
+    
+    <GridLayout rows="auto, auto, auto" columns="*, *, *" class="medicine-grid">
+      <Label text="Medicine" row="0" col="0" class="font-bold"></Label>
+      <Label text="Dosage" row="0" col="1" class="font-bold"></Label>
+      <Label text="Time" row="0" col="2" class="font-bold"></Label>
+      
+      <Label text="Metformin" row="1" col="0"></Label>
+      <Label text="500mg" row="1" col="1"></Label>
+      <Label text="8:00 AM" row="1" col="2"></Label>
+      
+      <Label text="Insulin" row="2" col="0"></Label>
+      <Label text="10 units" row="2" col="1"></Label>
+      <Label text="Before meals" row="2" col="2"></Label>
+    </GridLayout>
+    
+    <Label text="Potential Interactions" class="text-lg font-bold mt-4"></Label>
+    <Label text="No known interactions with your current medications." class="mt-2"></Label>
+    
+    <Button text="Update Medication" class="btn btn-primary mt-4"></Button>
+  </StackLayout>
+</ScrollView>
